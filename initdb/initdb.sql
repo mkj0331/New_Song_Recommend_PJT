@@ -1,0 +1,6 @@
+CREATE USER ssafyuser WITH PASSWORD 'ssafy';
+CREATE DATABASE backend OWNER ssafyuser;
+GRANT ALL PRIVILEGES ON DATABASE backend TO ssafyuser;
+
+\c backend;
+CREATE EXTENSION IF NOT EXISTS vector;
